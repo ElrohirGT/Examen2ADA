@@ -22,7 +22,7 @@
       pkgs = nixpkgsFor.${system};
     in {
       default = pkgs.mkShell {
-        packages = [(pkgs.python3.withPackages (p: [])) pkgs.black];
+        packages = [(pkgs.python3.withPackages (p: [p.pudb])) pkgs.black];
       };
     });
   };
