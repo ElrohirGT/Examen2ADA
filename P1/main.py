@@ -23,7 +23,7 @@ def _findCombinations(x, y, n, memo):
         return 1
 
     if current in memo and n in memo[current]:
-        # print("HIT!")
+        print("HIT!")
         return memo[current][n]
 
     center = (x, y)
